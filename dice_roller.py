@@ -15,7 +15,7 @@ def main():
             results[key]['rolls'].append(roll)
             dice_sum += roll
         results[key]['total'] = dice_sum
-    sort_results = sorted(Results.items(), key=lambda x: x[1]['total'], reverse=True)
+    sort_results = sorted(results.items(), key=lambda x: x[1]['total'], reverse=True)
     print(f'Results {results}')
     print(f'The winner is {sort_results[0][0]} ! Congrat ! ')
 
